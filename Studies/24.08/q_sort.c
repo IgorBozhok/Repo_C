@@ -39,7 +39,7 @@ void q_sort(int *Arr, unsigned N) {
 		srand(time(NULL));
 		int N;
 		int *Arr;
-		printf_s("Введите размер массива : ");
+		printf_s("Г‚ГўГҐГ¤ГЁГІГҐ Г°Г Г§Г¬ГҐГ° Г¬Г Г±Г±ГЁГўГ  : ");
 		scanf_s("%d", &N);
 		Arr = (int*)malloc(sizeof(int)*N);
 		for (int i = 0; i < N; ++i) {
