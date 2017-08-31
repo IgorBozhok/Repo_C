@@ -38,7 +38,7 @@ int main()
 	srand(time(NULL));
 	int N;
 	int *Arr;
-	printf_s("¬ведите размер массива : ");
+	printf_s("В¬ГўГҐГ¤ГЁГІГҐ Г°Г Г§Г¬ГҐГ° Г¬Г Г±Г±ГЁГўГ  : ");
 	scanf_s("%d", &N);
 	Arr = (int*)malloc(sizeof(int)*N);
 	for (int i = 0; i < N; ++i) {
