@@ -22,13 +22,13 @@ public:
 	void _sort();
 	void min();
 	void max();
-	void sum(Matrix obj1, Matrix obj2,Matrix& obj3);
+	void sum(Matrix obj1, Matrix obj2, Matrix& obj3);
 	void difference(Matrix obj1, Matrix obj2, Matrix& obj3);
 
-	
+
 };
 
-Matrix::Matrix():size(size), Mass2(nullptr) {}
+Matrix::Matrix() :size(size), Mass2(nullptr) {}
 Matrix::Matrix(int size)
 {
 	this->size = size;
@@ -65,6 +65,7 @@ Matrix::~Matrix()
 		}
 		delete[]Mass2;
 	}
+
 }
 
 void Matrix::creMatrix()
@@ -118,13 +119,13 @@ void Matrix::_sort()
 			count++;
 		}
 	}
-	sort(masstemp, masstemp+(size * size));
+	sort(masstemp, masstemp + (size * size));
 	count = 0;
 	for (int i = 0; i < size; i++)
 	{
 		for (int j = 0; j < size; j++)
 		{
-			this->Mass2[i][j]= masstemp[count];
+			this->Mass2[i][j] = masstemp[count];
 			count++;
 		}
 	}
@@ -143,7 +144,7 @@ void Matrix::min()
 			}
 		}
 	}
-	cout <<"Min num: "<< min << endl;
+	cout << "Min num: " << min << endl;
 }
 void Matrix::max()
 {
@@ -191,17 +192,18 @@ void Matrix::difference(Matrix obj1, Matrix obj2, Matrix& obj3)
 	if (obj1.size <= obj2.size)
 	{
 
-		int* masstemp = nullptr;
-		masstemp = new int[obj1.size*obj1.size];
-		int count = 0;
+		//int* masstemp = nullptr;
+		//masstemp = new int[obj1.size*obj1.size];
+		//int count = 0;
 		for (int i = 0; i < obj1.size; i++)
 		{
 			for (int j = 0; j < obj1.size; j++)
 			{
-				masstemp[count] = obj1.Mass2[i][j]  - obj2.Mass2[i][j];
-				count++;
+				obj3.Mass2[i][j] = obj1.Mass2[i][j] - obj2.Mass2[i][j];
+				//count++;
 			}
 		}
+		/*
 		count = 0;
 		for (int i = 0; i < obj1.size; i++)
 		{
@@ -211,13 +213,14 @@ void Matrix::difference(Matrix obj1, Matrix obj2, Matrix& obj3)
 				count++;
 			}
 		}
+		*/
 	}
 }
 
 
 void main(void)
 {
-	
+
 	Matrix obj;
 	obj.setSize();
 	obj.creMatrix();
@@ -228,7 +231,7 @@ void main(void)
 	obj.min();
 	obj.max();
 
-	
+
 	int size = 0;
 	cout << "Size matrix: ";
 	cin >> size;
@@ -243,18 +246,19 @@ void main(void)
 	Matrix obj2(obj);
 	obj2.outMatrix();
 	cout << endl;
-	Matrix obj3(obj);
+	Matrix obj3(obj1);
 	obj3.outMatrix();
 	Matrix obj4(obj);
 	obj.sum(obj2, obj3, obj4);
 	obj4.outMatrix();
-	obj.difference(obj2, obj3, obj4);
-	obj4.outMatrix();
+	Matrix obj5(obj);
+	obj.difference(obj2, obj3, obj5);
+	obj5.outMatrix();
 
 
 
-	
-	
+
+
 	system("pause");
 	return;
 }
