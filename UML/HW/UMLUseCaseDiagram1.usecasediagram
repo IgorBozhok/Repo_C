@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="76c1d579-3bf5-4f96-9013-77fdb3a83851" name="UMLUseCaseDiagram1" linkedPackageId="6aeaea5c-c86f-44c7-8b57-7b2eb26db02d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="f03fac68-47ff-40a9-ac2c-1ee3afba3a60">
+      <profileInstance Id="7aed7693-5ab9-44be-9904-71f1473634eb" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5c9a9a57-6e74-4c7f-b020-5bbb84d8fd15">
+      <profileInstance Id="f563d0d8-e878-4105-94aa-e643cc1e61b5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ab46afcc-a4a1-4703-8834-e578200fc604" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="610b3995-2b04-4a71-8c75-e26d2c0319d8" />
+        <targetEnds>
+          <association Id="cdcd2214-520a-4017-a101-36de2efaf027" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Зайти в игру " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec7cfff2-45c0-4683-aac4-a91a0e428135" LastKnownName="Играть в игру" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="901ebef5-b90e-4771-ba25-107592956e51" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1cf7f712-bf8a-4661-b694-34836eea0fe5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b51d5ef2-5c66-4855-a8da-fc1715c84ef6" name="Зайти в игру " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a832aca1-eb81-4f92-9bd3-92b1f4fa4e14" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="20aef3a6-c186-46ff-bd1b-f77b48661a93" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec7cfff2-45c0-4683-aac4-a91a0e428135" name="Играть в игру" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cd2dc118-e532-4c01-8ac3-6efc0900dd53" />
+        <suppliersInternal>
+          <dependency Id="2c6505fe-3845-463b-8fc3-a95a4b25cd47">
+            <useCaseMoniker Id="cec6e422-2885-4bcb-9903-4294b1013298" LastKnownName="Зайти на акаунт" />
+            <elementDefinition Id="aae3abfb-dce6-4b84-a55e-156037a74a74" />
+          </dependency>
+          <dependency Id="b28dbbc4-3150-453e-87a4-18b39715f3d1">
+            <useCaseMoniker Id="786f4683-6a19-4b27-b7be-863a2e59c75b" LastKnownName="зарегистрировать акаунт" />
+            <elementDefinition Id="84b8ae11-6f07-41db-b681-467099f8444e" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="786f4683-6a19-4b27-b7be-863a2e59c75b" name="зарегистрировать акаунт" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4365585d-1bdc-4f46-a8cf-909b2e0fc792" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cec6e422-2885-4bcb-9903-4294b1013298" name="Зайти на акаунт" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9ec06dc0-1049-4374-98d4-57bad9dbbfbc" />
+        <suppliersInternal>
+          <dependency Id="cfa0ceb1-5d98-484f-86ac-5e6c32c91a01">
+            <useCaseMoniker Id="303bd91b-980d-464a-bc07-ce07c3eea749" LastKnownName="Создать персасонаж" />
+            <elementDefinition Id="e9e7e7d9-f5cf-4cb1-92f5-a25d05430e76" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="303bd91b-980d-464a-bc07-ce07c3eea749" name="Создать персасонаж" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9055b98-4016-4f18-a3fb-e0488be70825" />
+        <suppliersInternal>
+          <dependency Id="a908551d-ca27-4481-b604-90a69fc2cf3a">
+            <useCaseMoniker Id="e137405c-e4c6-4af8-a94b-50aff41baf4f" LastKnownName="выбрать ник нэйм" />
+            <elementDefinition Id="1754c797-46bc-43fc-87d5-40b58da40bb3" />
+          </dependency>
+          <dependency Id="8b9de5a3-ec84-4691-be51-0cc6fe0133b0">
+            <useCaseMoniker Id="18967e5d-e56c-4a5c-9a0b-81a5df5df0e8" LastKnownName="Выбрать расу" />
+            <elementDefinition Id="74666565-f430-435f-b8a8-dae43111937d" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b63ce42b-0fd7-4525-9a43-61bac8b3c327" name="Быбрать эльфов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c098eabd-9465-4364-9e62-47ac7868d66c" />
+        <generalsInternal>
+          <generalization Id="d5139bfb-645b-44bc-8d11-32bbe89a032b" isSubstitutable="false">
+            <useCaseMoniker Id="18967e5d-e56c-4a5c-9a0b-81a5df5df0e8" LastKnownName="Выбрать расу" />
+            <elementDefinition Id="67e599c0-92b4-4122-bcf1-ec82f3e613ab" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5915ce09-cdf0-4682-b909-1c8a6f0ba9f3" name="Выбрать гномов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83d19c4c-faea-4847-9cae-f22d05e3d065" />
+        <generalsInternal>
+          <generalization Id="a18633ac-eb59-44f7-876b-1c4b70893105" isSubstitutable="false">
+            <useCaseMoniker Id="18967e5d-e56c-4a5c-9a0b-81a5df5df0e8" LastKnownName="Выбрать расу" />
+            <elementDefinition Id="57085a47-f034-41c1-ab9d-eda9d4ad3d29" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e137405c-e4c6-4af8-a94b-50aff41baf4f" name="выбрать ник нэйм" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e9659925-83ce-4035-8f70-75d72e59fff3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="18967e5d-e56c-4a5c-9a0b-81a5df5df0e8" name="Выбрать расу" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9e30527c-eaf9-4256-95de-f8c21c661af0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1ee35802-bd35-477f-8d8d-9fbc3ebf7dbe" name="выбрат прическу" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b65edb37-2032-407a-b7b2-82ea2acdb14a" />
+        <extendedCases>
+          <extend Id="e00ce7ed-bef7-4074-96ac-94be9d02c730">
+            <useCaseMoniker Id="e1b2e201-2d0c-446c-9623-0d801bd4928c" LastKnownName="выбрать стиль" />
+            <elementDefinition Id="515fda01-1b13-4ff8-8138-dbdeed26bb3f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="24061669-6cd4-4c92-820e-7c2b014de65b" name="выбрать пол" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="153715d1-0339-40e0-9fec-16d494f65214" />
+        <suppliersInternal>
+          <dependency Id="026b8aa1-f7dc-4f27-8be5-548f160681e1">
+            <useCaseMoniker Id="e1b2e201-2d0c-446c-9623-0d801bd4928c" LastKnownName="выбрать стиль" />
+            <elementDefinition Id="4d291322-354d-4f67-84ce-9b2ec0d880fd" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4d81f393-dfc7-4df8-86d0-6974b20fa7b2" name="выбрать цвет волос" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44864493-ff17-408e-8ee8-75fb90df072e" />
+        <additions>
+          <include Id="6dc302d8-b452-426d-9b83-bb07972e12b3">
+            <useCaseMoniker Id="e1b2e201-2d0c-446c-9623-0d801bd4928c" LastKnownName="выбрать стиль" />
+            <elementDefinition Id="b5fc6560-9ee8-49f1-bd46-2611eecdd189" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1b2e201-2d0c-446c-9623-0d801bd4928c" name="выбрать стиль" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3fa60dff-1c36-4c11-b760-c52517c9fea9" />
+        <suppliersInternal>
+          <dependency Id="ab80c5e0-de35-45e3-a1b6-90a6d8b13389">
+            <useCaseMoniker Id="5915ce09-cdf0-4682-b909-1c8a6f0ba9f3" LastKnownName="Выбрать гномов" />
+            <elementDefinition Id="210753b0-819a-4e1b-8deb-d5357302133f" />
+          </dependency>
+          <dependency Id="ff937f0a-b06a-4a04-9509-89815458c672">
+            <useCaseMoniker Id="b63ce42b-0fd7-4525-9a43-61bac8b3c327" LastKnownName="Быбрать эльфов" />
+            <elementDefinition Id="7aa5b3ea-711b-4b2d-835a-4babedec1f15" />
+          </dependency>
+        </suppliersInternal>
+        <extendedCases>
+          <extend Id="320e56b7-b411-4c37-992a-b66c7cc7eea9">
+            <useCaseMoniker Id="54a12323-cd08-456c-a76d-e533b2c7ad19" LastKnownName="Выбрать людей" />
+            <elementDefinition Id="15a36b6d-6798-414d-b976-bf04b8743725" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54a12323-cd08-456c-a76d-e533b2c7ad19" name="Выбрать людей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="200b44a3-d80f-4f11-a7eb-32d7bcdf1ac5" />
+        <generalsInternal>
+          <generalization Id="9daca5db-fef5-4e17-b284-2357f78e994e" isSubstitutable="false">
+            <useCaseMoniker Id="18967e5d-e56c-4a5c-9a0b-81a5df5df0e8" LastKnownName="Выбрать расу" />
+            <elementDefinition Id="ed14fa1e-feb1-4e2d-974a-e93589485c96" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="6aeaea5c-c86f-44c7-8b57-7b2eb26db02d" name="ModelingProject2">
+    <elementDefinition Id="48b5d6b2-dedb-48f3-ac93-fd49d5f4d295" />
+  </package>
+</useCaseModelRoot>
